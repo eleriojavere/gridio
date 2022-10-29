@@ -63,7 +63,7 @@ function App() {
         setError(true);
         console.log(err, "Error fetching the api");
       });
-  }, [data?.toString()]);
+  }, []);
 
   if (isLoading) {
     return <div>Loading...</div>;
