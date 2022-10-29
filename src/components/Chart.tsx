@@ -15,8 +15,9 @@ export default function Chart({ data }: { data: Data | undefined }) {
   const dateFormatter = (date: any) => {
     // return moment(date).unix();
 
-    return moment(date).format("DD/MM/YY");
+    return moment(date).format(" HH:mm");
   };
+
   return (
     <ResponsiveContainer width="100%" height="100%">
       <LineChart
@@ -35,7 +36,7 @@ export default function Chart({ data }: { data: Data | undefined }) {
           type="category"
           dataKey="timestamp"
           scale="time"
-          // tickFormatter={(tick) => dateFormatter(tick)}
+          tickFormatter={(tick) => dateFormatter(tick)}
         />
         <YAxis />
         <Tooltip />
