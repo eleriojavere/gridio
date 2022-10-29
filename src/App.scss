@@ -1,6 +1,26 @@
 .App {
   text-align: center;
 }
+body {
+  min-width: 320px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #071c39;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+.wrapper-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 480px;
+
+  h1 {
+    color: #4bc8e2;
+  }
+}
 
 .App-logo {
   height: 40vmin;
