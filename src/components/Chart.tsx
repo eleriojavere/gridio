@@ -15,7 +15,7 @@ export default function Chart({ data }: { data: Data | undefined }) {
   const dateFormatter = (date: any) => {
     // return moment(date).unix();
 
-    return moment(date).format(" HH:mm");
+    return moment(date).format("DD/mm/YYYY HH:mm");
   };
 
   return (
